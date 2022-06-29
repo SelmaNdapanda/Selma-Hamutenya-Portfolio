@@ -1,56 +1,20 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Selma Hamutenya Portfolio Project
 
-# Project Name
-
-> Description the project.
+> This is my portfolio website to showcase my skills and projects. 
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+- HTML
+- CSS
 
 ## Authors
 
-👤 **Author1**
+👤 **Selma Ndapanda Hamutenya**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@SelmaNdapanda](https://github.com/SelmaNdapanda)
+- Twitter: [@SellohBlaq](https://twitter.com/sellohBlaq)
+- LinkedIn: [selma-ndapanda-hamutenya-19169a1ab](https://linkedin.com/in/selma-ndapanda-hamutenya-19169a1ab)
 
 ## 🤝 Contributing
 
@@ -71,3 +35,4 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+

@@ -34,3 +34,61 @@ body {
     padding-top: 5px;
     margin-right: 35px;
   }
+
+  .headline {
+    height: 604px;
+    background-image: url("images/header-shapes\ mobile.png");
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+    border: 1px solid #f7f7f9;
+    border-bottom-left-radius: 25% 50px;
+  }
+  
+  .primary1 {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    align-items: center;
+    color: #172b4d;
+    margin: 114px 24px 12px 24px;
+   
+  }
+  
+  .headline p {
+    /* height: 146px; */
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    margin: 12px 24px 12px 24px;
+  }
+  
+  p.social-media {
+    margin: 12px 24px 12px 24px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+  }
+  
+  .social-media-icons {
+    display: flex;
+    margin-top: 12px;
+    justify-content: space-between;
+    align-items: baseline;
+    list-style-type: none;
+    gap: 10px;
+    margin-left: 24px;
+    margin-right: 180px;
+    /* margin-bottom: 136px; */
+  }

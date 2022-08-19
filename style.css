@@ -128,7 +128,6 @@ p.social-media {
 }
 
 h2.title {
-  margin-left: 16px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   color: #172b4d;
@@ -220,8 +219,6 @@ h2.title {
   margin-top: 12px;
   margin-bottom: 12px;
   margin-left: 16px;
-
-
 }
 
 .tag {
@@ -389,7 +386,7 @@ h2.title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #ffffff;
+  background: #fff;
   width: 375px;
   gap: 24px;
   border-top-right-radius: 80px;
@@ -403,7 +400,7 @@ h2.title {
   width: 327px;
   gap: 12px;
   margin: 114px 24px 48px 24px;
-  padding: 0px;
+  padding: 0;
   height: 409px;
 }
 
@@ -433,11 +430,11 @@ h2.title {
   color: #344563;
 }
 
-.Social-media-layout{
+.Social-media-layout {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 16px;
   width: 200px;
   height: 80px;
@@ -463,7 +460,7 @@ h2.title {
   padding: 12px;
   gap: 10px;
   height: 48px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   border-radius: 8px;
   color: #396df2;
   font-family: "Poppins", sans-serif;
@@ -471,21 +468,17 @@ h2.title {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 12px;
-  margin-left: 0px;
+  margin-left: 0;
 }
-
 
 .about-btn:hover {
-  border: 1px solid #6070FF;
-  color: #ffffff;
+  border: 1px solid #6070ff;
+  color: #fff;
   background-color: #396df2;
 }
-
 
 .about-btn:visited {
   background: #2230d2;
@@ -496,7 +489,7 @@ h2.title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 327px;
   height: 464.15px;
   margin: 24px 24px 113.85px 24px;
@@ -507,7 +500,7 @@ h2.title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   width: 327px;
   height: 320.15px;
 }
@@ -523,7 +516,7 @@ h2.title {
 .lang {
   display: flex;
   align-items: center;
-  color: #000000;
+  color: #000;
   top: calc(50% - 24px / 2);
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -531,8 +524,7 @@ h2.title {
   font-size: 20px;
   line-height: 24px;
   padding-left: 12px;
-  /* margin-top: 30px; */
-  margin: 0px;
+  margin: 0;
 }
 
 .arrow {
@@ -593,7 +585,7 @@ hr.solid {
   text-align: center;
   border-top: 3px solid #dfe1e6;
   width: 327px;
-  margin: 0px;
+  margin: 0;
 }
 
 .frameworks {
@@ -602,7 +594,6 @@ hr.solid {
   list-style-type: none;
   width: 327px;
   height: 72px;
-  
 }
 
 .skills {
@@ -612,6 +603,3 @@ hr.solid {
   width: 327px;
   height: 72px;
 }
-
-
-

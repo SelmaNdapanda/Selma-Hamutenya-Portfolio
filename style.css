@@ -764,7 +764,8 @@ button:active {
     display: flex;
     flex: 1 1 auto;
     text-align: center;
-    padding: 1em;
+    padding-top: 3em;
+    padding-bottom: 2em;
     background-color: #fff;
     justify-content: space-between;
   }
@@ -1163,6 +1164,7 @@ button:active {
     width: 100%;
     height: 924px;
     background: url("images/abt-myself-desktop.png") no-repeat;
+    background-size: cover;
     border-top-right-radius: 80px;
     top: 3600px;
   }
@@ -1171,14 +1173,14 @@ button:active {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0;
+    padding: 0px;
     gap: 24px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     width: 447px;
     height: 392px;
     margin-left: 142px;
-    margin-top: 142px;
+    margin-top: 0px;
   }
 
   h2.about-title {
@@ -1217,7 +1219,7 @@ button:active {
     padding: 0;
     width: 684px;
     height: 360px;
-    margin-top: 142px;
+    margin-top: 0px;
     margin-right: 142px;
   }
 
@@ -1259,6 +1261,7 @@ button:active {
     gap: 12px;
     width: 414px;
     height: 144px;
+    margin-left: 0px;
   }
 
   .list {
@@ -1307,7 +1310,7 @@ button:active {
     box-sizing: border-box;
     padding: 103px 24px 8px 24px;
     border-radius: 76px 0 0 0;
-    background-image: url("./Images/contactformbackgroundshapesdesktop.png");
+    background-image: url("images/contactformbackgroundshapesdesktop.png");
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;

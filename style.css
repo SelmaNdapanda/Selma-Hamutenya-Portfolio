@@ -1173,14 +1173,14 @@ button:active {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 24px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     width: 447px;
     height: 392px;
     margin-left: 142px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   h2.about-title {
@@ -1219,7 +1219,7 @@ button:active {
     padding: 0;
     width: 684px;
     height: 360px;
-    margin-top: 0px;
+    margin-top: 0;
     margin-right: 142px;
   }
 
@@ -1261,7 +1261,7 @@ button:active {
     gap: 12px;
     width: 414px;
     height: 144px;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .list {

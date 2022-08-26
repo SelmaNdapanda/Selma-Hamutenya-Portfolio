@@ -662,6 +662,11 @@ footer {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
+  transition: all 0.35s ease-in;
+}
+
+.contact-description:hover {
+  transform: translate(7%);
 }
 
 .form {

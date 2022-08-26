@@ -28,6 +28,13 @@ a.logo {
   color: #6070ff;
   text-decoration: none;
   margin-left: 24px;
+  animation: rotateZ 5s;
+}
+
+@keyframes rotateZ {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 a.union {
@@ -130,6 +137,11 @@ p.social-media {
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 16px;
+  transition: all 0.35s ease-in;
+}
+
+.card-works img:hover {
+  transform: scale(1.2);
 }
 
 h2.title {
@@ -662,6 +674,11 @@ footer {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
+  transition: all 0.35s ease-in;
+}
+
+.contact-description:hover {
+  transform: translate(7%);
 }
 
 .form {
@@ -804,6 +821,12 @@ button:active {
     font-size: 15px;
     line-height: 20px;
     font-weight: 500;
+    transition: all 0.5s ease-in-out;
+  }
+
+  header .menu a:hover {
+    letter-spacing: 2px;
+    opacity: 0.6;
   }
 
   .headline {
@@ -914,6 +937,11 @@ button:active {
     height: 448px;
     margin: 24px auto 24px 24px;
     border-radius: 8px;
+    transition: all 0.35s ease-in;
+  }
+
+  .snapshotdesktop1:hover {
+    transform: scale(1.5);
   }
 
   .snapshotdesktop2 {
@@ -921,6 +949,10 @@ button:active {
     width: 544px;
     height: 448px;
     border-radius: 8px;
+  }
+
+  .snapshotdesktop2:hover {
+    transform: scale(1.5);
   }
 
   .card-works-content1 {

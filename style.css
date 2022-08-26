@@ -821,6 +821,12 @@ button:active {
     font-size: 15px;
     line-height: 20px;
     font-weight: 500;
+    transition: all .5s ease-in-out;
+  }
+
+  header .menu a:hover {
+    letter-spacing: 2px;
+    opacity: .6;
   }
 
   .headline {

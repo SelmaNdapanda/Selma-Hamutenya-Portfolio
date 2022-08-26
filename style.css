@@ -130,6 +130,11 @@ p.social-media {
   margin-left: 16px;
   margin-right: 16px;
   margin-top: 16px;
+  transition: all 0.35s ease-in;
+}
+
+.card-works img:hover {
+  transform: scale(1.5);
 }
 
 h2.title {
@@ -919,6 +924,11 @@ button:active {
     height: 448px;
     margin: 24px auto 24px 24px;
     border-radius: 8px;
+    transition: all 0.35s ease-in;
+  }
+
+  .snapshotdesktop1:hover {
+    transform: scale(1.5);
   }
 
   .snapshotdesktop2 {
@@ -926,6 +936,10 @@ button:active {
     width: 544px;
     height: 448px;
     border-radius: 8px;
+  }
+
+  .snapshotdesktop2:hover {
+    transform: scale(1.5);
   }
 
   .card-works-content1 {

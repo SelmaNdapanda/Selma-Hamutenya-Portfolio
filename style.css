@@ -28,6 +28,13 @@ a.logo {
   color: #6070ff;
   text-decoration: none;
   margin-left: 24px;
+  animation: rotateZ 5s;
+}
+
+@keyframes rotateZ {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 a.union {
@@ -667,7 +674,7 @@ footer {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
-  transition: all 0.35s ease-in;
+  transition: all 0.35s ease-in; 
 }
 
 .contact-description:hover {

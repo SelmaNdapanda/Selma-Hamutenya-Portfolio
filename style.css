@@ -119,12 +119,9 @@ a.union {
 
 .works {
   display: grid;
-  grid-column-gap: 25px;
   background: #f7f7f9;
   padding-top: 75px;
   grid-column-gap: 25px;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 .card-works {
@@ -144,13 +141,56 @@ a.union {
 
 .card-works img {
   margin-left: 16px;
-  margin-right: 16px;
   margin-top: 16px;
   transition: all 0.35s ease-in;
 }
 
 .card-works img:hover {
   transform: scale(1.2);
+}
+
+.snapshotdesktop1 {
+  position: static;
+  width: 90%;
+  height: 220px;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.snapshotdesktop2 {
+  position: static;
+  width: 90%;
+  height: 220px;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.snapshotdesktop3 {
+  position: static;
+  width: 90%;
+  height: 220px;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.snapshotdesktop4 {
+  position: static;
+  width: 90%;
+  height: 220px;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0;
 }
 
 h2.title {
@@ -237,7 +277,7 @@ h2.title {
   display: flex;
   flex-direction: row;
   gap: 8px;
-  margin: 0;
+  margin-left: 16px;
   padding: 0;
   order: 2;
   flex-wrap: wrap;
@@ -904,17 +944,17 @@ button:active {
     position: absolute;
     margin: 0;
     padding: 142px;
-    gap: 142px;
     top: 917px;
   }
 
   .card-works {
+    margin: 100px auto;
     border: 1px solid #dfe1e6;
     border-radius: 24px;
     background: #fff;
-    width: 1156px;
-    height: 496px;
-    margin: 0;
+    width: 98%; 
+    height: auto;
+    
   }
 
   .card-works1 {
@@ -929,45 +969,65 @@ button:active {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
+    justify-content: flex-end; 
+    gap: 22px;
   }
+
 
   .snapshotdesktop1 {
-    width: 544px;
-    height: 448px;
-    margin: 24px auto 24px 24px;
+    width: 40%;
+    height: 40%; 
+    margin-top: 24px;
+    margin-left: 24px;
     border-radius: 8px;
-    transition: all 0.35s ease-in;
-  }
-
-  .snapshotdesktop1:hover {
-    transform: scale(1.5);
   }
 
   .snapshotdesktop2 {
-    margin: 24px 22px 24px 590px;
-    width: 544px;
-    height: 448px;
+    margin-top: 24px;
+    margin-right: -22px;
+    width: 40%;
+    height: 40%;
     border-radius: 8px;
   }
 
-  .snapshotdesktop2:hover {
-    transform: scale(1.5);
+  .snapshotdesktop3 {
+    width: 40%;
+    height: 40%;
+    margin-top: 24px;
+    margin-left: 24px;
+    border-radius: 8px;
   }
 
+  .snapshotdesktop4 {
+    margin-top: 24px;
+    margin-right: 22px;
+    width: 40%;
+    height: 40%;
+    border-radius: 8px;
+  }
+
+
   .card-works-content1 {
-    margin: 24px 22px 27px 22px;
+    
+    margin-top: 24px;
+    margin-right: 0px;
+    width: 50%;
+    height: 50%;
   }
 
   .card-works-content2 {
-    margin: 24px 22px 7px 24px;
+    margin-top: 24px;
+    margin-left: 0px;
+    width: 50%;
+    height: 50%;
+    gap: -48px;
   }
 
   h2.title {
-    width: 496px;
-    height: 46px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 496px; 
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
@@ -979,12 +1039,10 @@ button:active {
   }
 
   .multi-post {
-    margin: 24px 24px 12px 24px;
+    margin: 0px;
   }
 
   .facebook360 {
-    width: 496px;
-    height: 46px;
     color: #091e42;
     line-height: 44px;
     font-family: 'Poppins', sans-serif;
@@ -995,25 +1053,13 @@ button:active {
   }
 
   .ubernavigation {
-    margin: 12px 0;
-    top: 0;
-    width: 295px;
-    height: 36px;
-    left: 0;
-    flex: none;
-    flex-grow: 0;
-    order: 0;
-    color: #091e42;
-    line-height: 44px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
+    margin: 0px;
   }
 
   .frame {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -1048,7 +1094,7 @@ button:active {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 18px; 
     line-height: 24px;
     margin-left: 12px;
   }
@@ -1080,8 +1126,6 @@ button:active {
     position: static;
     left: 0;
     top: 92px;
-    height: 90px;
-    width: 295px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -1096,7 +1140,6 @@ button:active {
     align-items: center;
     padding: 0;
     gap: 8px;
-    width: 316px;
     height: 24px;
     list-style-type: none;
   }

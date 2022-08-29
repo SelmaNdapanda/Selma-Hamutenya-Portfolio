@@ -1,12 +1,14 @@
-* {
-  margin: 0 auto;
+*,
+*::before,
+*::after {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  width: 375px;
   background-color: #e5e5e5;
+  overflow-x: hidden;
 }
 
 header {
@@ -53,7 +55,7 @@ a.union {
 }
 
 .headline {
-  height: 604px;
+  height: 604px; 
   background-image: url("images/header-shapes\ mobile.png");
   background-color: #fff;
   display: flex;
@@ -62,6 +64,8 @@ a.union {
   background-repeat: no-repeat;
   border: 1px solid #f7f7f9;
   border-bottom-left-radius: 25% 50px;
+  background-size: 100%; 
+
 }
 
 .primary1 {
@@ -88,14 +92,20 @@ a.union {
   margin: 12px 24px 12px 24px;
 }
 
-p.social-media {
+.social-media {
+  display: flex;
+  flex-direction: column;
   margin: 12px 24px 12px 24px;
+}
+
+.social-media p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
+  margin-left: 0px;
 }
 
 .social-media-icons {
@@ -105,12 +115,11 @@ p.social-media {
   align-items: baseline;
   list-style-type: none;
   gap: 10px;
-  margin-left: 24px;
-  margin-right: 180px;
 }
 
 .works {
   display: grid;
+  grid-column-gap: 25px;
   background: #f7f7f9;
   padding-top: 75px;
   grid-column-gap: 25px;
@@ -227,14 +236,11 @@ h2.title {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  gap: 4px;
+  gap: 8px;
+  margin: 0;
   padding: 0;
-  width: 203px;
-  height: 24px;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  margin-left: 16px;
+  order: 2;
+  flex-wrap: wrap;
 }
 
 .tag {
@@ -850,11 +856,11 @@ button:active {
     padding: 0;
     gap: 12px;
     position: absolute;
-    width: 920px;
-    height: 268px;
-    margin-left: 260px;
+    margin-left: 260px; 
     margin-right: 260px;
+    margin-bottom: auto;
     top: calc(50% - 268px / 2);
+    width: 70%;
   }
 
   .primary1 {
@@ -867,6 +873,7 @@ button:active {
     letter-spacing: 0.37px;
     width: 920px;
     height: 122px;
+    margin: 0px;
   }
 
   .headline p {
@@ -875,23 +882,18 @@ button:active {
     font-size: 20px;
     line-height: 28px;
     color: #344563;
+    margin: 0px;
   }
 
-  p.social-media {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7f8cff;
-  }
-
-  ul.social-media-icons {
-    list-style-type: none;
+  .social-media {
     display: flex;
-    width: 170.17px;
-    height: 20px;
-    margin-left: 280px;
-    margin-top: 600px;
+    flex-direction: column;
+    margin-top: 450px;
+    margin-left: 260px;
+  }
+
+  .social-media p {
+    color: #7f8cff;
   }
 
   .works {

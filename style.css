@@ -444,15 +444,18 @@ h2.title {
   text-decoration: none;
 }
 
+.work-bottom {
+  display: none;
+}
+
 .about {
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  width: 375px;
   gap: 24px;
   background: url("images/abt-myself.png") no-repeat;
-  height: 1263px;
+  background-size: 100%; 
   border-top-right-radius: 80px;
 }
 
@@ -500,8 +503,6 @@ h2.title {
   align-items: flex-start;
   padding: 0;
   gap: 16px;
-  width: 200px;
-  height: 80px;
   margin-left: -24px;
   margin-bottom: 12px;
 }
@@ -594,8 +595,13 @@ h2.title {
 .arrow {
   width: 14px;
   height: 8px;
-  margin-right: 50px;
-  margin-top: 22px;
+  padding-left: 100px;
+  margin-left: 50px;
+  padding-top: 25px;
+}
+
+.skills-arrow {
+  padding-left: 70px;
 }
 
 .frame2 {
@@ -668,8 +674,7 @@ hr.solid {
 }
 
 footer {
-  margin: 0 auto;
-  width: 375px;
+  margin: 0;
   height: 779px;
   border-radius: 76px 0 0 0;
   background-color: #6070ff;
@@ -682,6 +687,7 @@ footer {
   align-items: center;
   box-sizing: border-box;
   background: #6070ff url("images/contact-form.png") 100% -20px no-repeat;
+  background-size: 100%; 
   background-size: contain;
   border-top-left-radius: 100px;
   padding-top: 114px;
@@ -1232,37 +1238,44 @@ button:active {
     color: #5e6c84;
   }
 
+  .work-bottom {
+    padding-bottom: 142px;
+    display: none;
+  }
+
   .about {
     position: absolute;
-    flex-direction: row;
-    gap: 24px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-column-gap: 80px;
     align-items: center;
     box-sizing: border-box;
     width: 100%;
     height: 924px;
+    margin: 142px 0 auto 0;
     background: url("images/abt-myself-desktop.png") no-repeat;
     background-size: cover;
-    border-top-right-radius: 80px;
-    top: 3600px;
+    border-top-right-radius: 70px;
+    top: 3500px;
   }
 
   .top {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0;
+    padding-left: 20px;
+    position: static;
     gap: 24px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    width: 447px;
-    height: 392px;
-    margin-left: 142px;
-    margin-top: 0;
+    width: 100%;
+    height: 392px; 
+    height: auto;
+    margin: 114px 24px auto 0;
   }
 
   h2.about-title {
-    width: 447px;
-    height: 114px;
+    position: static;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
@@ -1271,47 +1284,42 @@ button:active {
   }
 
   p.hello {
-    width: 447px;
     height: 102px;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: #344563;
   }
-
-  .Social-media-layout .social-media-icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 200px;
-    height: 40px;
-    margin: 0;
-    padding: 0;
-  }
-
+ 
   .skills-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: static;
+    margin: 100px 0 auto 0;
     padding: 0;
-    width: 684px;
-    height: 360px;
-    margin-top: 0;
-    margin-right: 142px;
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-grow: 0;
+    align-items: center;
+    width: 80%;
+    height: 464.15px;
+    left: 24px;
+    top: 547px;
+    order: 1;
   }
 
   .frame-languages {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     padding: 0;
-    width: 684px;
-    height: 216px;
+    width: 100%;
   }
-
+  
   .languages {
-    width: 684px;
-    height: 72px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin-right: 0;
+    padding-right: 20px;
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 36px;
   }
 
   .lang {
@@ -1321,6 +1329,7 @@ button:active {
     display: flex;
     align-items: center;
     color: #344563;
+    padding-right: 80px;
   }
 
   .arrow {
@@ -1331,26 +1340,32 @@ button:active {
   }
 
   .frame2 {
+    list-style-type: none;
+    padding-left: 0;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px;
     gap: 12px;
-    width: 414px;
-    height: 144px;
-    margin-left: 0;
+    flex-wrap: wrap;
+  }
+
+  .language1 {
+    position: static;
+    width: 122px;
+    height: 120px;
+    left: 12px;
+    top: 12px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    flex: none;
+    flex-grow: 0;
+    margin: 12px 0 12px 0;
   }
 
   .list {
-    width: 122px;
-    height: 120px;
-    background: #f7f7f9;
-    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-row-gap: 16px;
   }
-
   .language {
-    width: 98px;
-    height: 24px;
     margin-left: 12px;
     margin-top: 76px;
     font-family: 'Poppins', sans-serif;
@@ -1363,10 +1378,9 @@ button:active {
     color: #253858;
   }
 
-  .frameworks,
-  .skills {
-    width: 684px;
-    height: 72px;
+  .frameworks .lang {
+    padding-left: -24px;
+    width: 100%;
   }
 
   hr.solid {
@@ -1377,7 +1391,7 @@ button:active {
   }
 
   .footer {
-    top: 4515px;
+    top: 4600px;
     position: absolute;
     left: 0;
   }

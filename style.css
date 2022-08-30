@@ -507,7 +507,7 @@ h2.title {
   margin-bottom: 12px;
 }
 
-.social-media {
+.social-media-connect {
   display: flex;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -824,6 +824,7 @@ button:active {
     padding: 0;
     margin: 0;
     width: 100%;
+    height: auto;
   }
 
   header {
@@ -948,7 +949,7 @@ button:active {
     align-items: center;
     width: 100%;
     position: absolute;
-    margin: 0;
+    margin-bottom: 142px;
     padding: 142px;
     top: 917px;
   }
@@ -1067,7 +1068,7 @@ button:active {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    margin: 0;
+    margin-left: 24px;
     padding: 0;
     gap: 12px;
   }
@@ -1092,6 +1093,7 @@ button:active {
   }
 
   .role {
+    list-style-type: disc;
     color: #6b778c;
     margin: 0 0;
     flex: none;
@@ -1106,6 +1108,7 @@ button:active {
   }
 
   .year {
+    list-style-type: disc;
     color: #6b778c;
     flex: none;
     order: 0;
@@ -1239,24 +1242,23 @@ button:active {
   }
 
   .work-bottom {
-    padding-bottom: 142px;
-    display: none;
+    opacity: 0; 
   }
 
   .about {
-    position: absolute;
+    position: relative;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-column-gap: 80px;
     align-items: center;
     box-sizing: border-box;
     width: 100%;
-    height: 924px;
-    margin: 142px 0 auto 0;
+    height: 924px; 
+    margin: 142px 0 10px 0;
     background: url("images/abt-myself-desktop.png") no-repeat;
     background-size: cover;
     border-top-right-radius: 70px;
-    top: 3500px;
+    top: 2600px;
   }
 
   .top {
@@ -1264,13 +1266,10 @@ button:active {
     flex-direction: column;
     align-items: flex-start;
     padding-left: 20px;
-    position: static;
     gap: 24px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     width: 100%;
-    height: 392px; 
-    height: auto;
     margin: 114px 24px auto 0;
   }
 
@@ -1290,6 +1289,25 @@ button:active {
     line-height: 24px;
     color: #344563;
   }
+
+  .Social-media-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 40px;
+    margin-top: 20px;
+  }
+
+  .social-media-connect {
+    margin-top: 50px;
+    line-height: 24px;
+    
+  }
+
+  .about-btn {
+    margin-top: 100px;
+  }
  
   .skills-list {
     position: static;
@@ -1301,13 +1319,12 @@ button:active {
     flex-grow: 0;
     align-items: center;
     width: 80%;
-    height: 464.15px;
     left: 24px;
     top: 547px;
     order: 1;
   }
 
-  .frame-languages {
+  .frame-languages, .frame-frameworks, .frame-skills {
     padding: 0;
     width: 100%;
   }
@@ -1337,6 +1354,10 @@ button:active {
     right: 25%;
     top: 37.5%;
     bottom: 37.5%;
+  }
+
+  .down-arrow {
+    margin-left: -25px;
   }
 
   .frame2 {
@@ -1407,7 +1428,6 @@ button:active {
     display: flex;
     flex-direction: column;
     width: 99vmax;
-    height: 846px;
     align-items: center;
     margin: 0 auto;
     text-align: center;

@@ -55,7 +55,7 @@ a.union {
 }
 
 .headline {
-  height: 604px; 
+  height: 604px;
   background-image: url("images/header-shapes\ mobile.png");
   background-color: #fff;
   display: flex;
@@ -64,8 +64,7 @@ a.union {
   background-repeat: no-repeat;
   border: 1px solid #f7f7f9;
   border-bottom-left-radius: 25% 50px;
-  background-size: 100%; 
-
+  background-size: 100%;
 }
 
 .primary1 {
@@ -105,7 +104,7 @@ a.union {
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .social-media-icons {
@@ -455,7 +454,7 @@ h2.title {
   box-sizing: border-box;
   gap: 24px;
   background: url("images/abt-myself.png") no-repeat;
-  background-size: 100%; 
+  background-size: 100%;
   border-top-right-radius: 80px;
 }
 
@@ -687,7 +686,7 @@ footer {
   align-items: center;
   box-sizing: border-box;
   background: #6070ff url("images/contact-form.png") 100% -20px no-repeat;
-  background-size: 100%; 
+  background-size: 100%;
   background-size: contain;
   border-top-left-radius: 100px;
   padding-top: 114px;
@@ -903,7 +902,7 @@ button:active {
     padding: 0;
     gap: 12px;
     position: absolute;
-    margin-left: 260px; 
+    margin-left: 260px;
     margin-right: 260px;
     margin-bottom: auto;
     top: calc(50% - 268px / 2);
@@ -920,7 +919,7 @@ button:active {
     letter-spacing: 0.37px;
     width: 920px;
     height: 122px;
-    margin: 0px;
+    margin: 0;
   }
 
   .headline p {
@@ -929,7 +928,7 @@ button:active {
     font-size: 20px;
     line-height: 28px;
     color: #344563;
-    margin: 0px;
+    margin: 0;
   }
 
   .social-media {
@@ -959,9 +958,8 @@ button:active {
     border: 1px solid #dfe1e6;
     border-radius: 24px;
     background: #fff;
-    width: 98%; 
+    width: 98%;
     height: auto;
-    
   }
 
   .card-works1 {
@@ -976,14 +974,13 @@ button:active {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: flex-end; 
+    justify-content: flex-end;
     gap: 22px;
   }
 
-
   .snapshotdesktop1 {
     width: 40%;
-    height: 40%; 
+    height: 40%;
     margin-top: 24px;
     margin-left: 24px;
     border-radius: 8px;
@@ -1013,18 +1010,16 @@ button:active {
     border-radius: 8px;
   }
 
-
   .card-works-content1 {
-    
     margin-top: 24px;
-    margin-right: 0px;
+    margin-right: 0;
     width: 50%;
     height: 50%;
   }
 
   .card-works-content2 {
     margin-top: 24px;
-    margin-left: 0px;
+    margin-left: 0;
     width: 50%;
     height: 50%;
     gap: -48px;
@@ -1034,7 +1029,7 @@ button:active {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 496px; 
+    width: 496px;
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
@@ -1046,7 +1041,7 @@ button:active {
   }
 
   .multi-post {
-    margin: 0px;
+    margin: 0;
   }
 
   .facebook360 {
@@ -1060,7 +1055,7 @@ button:active {
   }
 
   .ubernavigation {
-    margin: 0px;
+    margin: 0;
   }
 
   .frame {
@@ -1102,7 +1097,7 @@ button:active {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 18px; 
+    font-size: 18px;
     line-height: 24px;
     margin-left: 12px;
   }
@@ -1242,7 +1237,7 @@ button:active {
   }
 
   .work-bottom {
-    opacity: 0; 
+    opacity: 0;
   }
 
   .about {
@@ -1253,7 +1248,7 @@ button:active {
     align-items: center;
     box-sizing: border-box;
     width: 100%;
-    height: 924px; 
+    height: 924px;
     margin: 142px 0 10px 0;
     background: url("images/abt-myself-desktop.png") no-repeat;
     background-size: cover;
@@ -1302,13 +1297,12 @@ button:active {
   .social-media-connect {
     margin-top: 50px;
     line-height: 24px;
-    
   }
 
   .about-btn {
     margin-top: 100px;
   }
- 
+
   .skills-list {
     position: static;
     margin: 100px 0 auto 0;
@@ -1324,11 +1318,13 @@ button:active {
     order: 1;
   }
 
-  .frame-languages, .frame-frameworks, .frame-skills {
+  .frame-languages,
+  .frame-frameworks,
+  .frame-skills {
     padding: 0;
     width: 100%;
   }
-  
+
   .languages {
     display: grid;
     grid-template-columns: 80% 20%;
@@ -1386,6 +1382,7 @@ button:active {
     grid-template-rows: 20% 80%;
     grid-row-gap: 16px;
   }
+
   .language {
     margin-left: 12px;
     margin-top: 76px;

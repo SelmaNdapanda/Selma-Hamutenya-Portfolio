@@ -8,6 +8,10 @@
 - HTML
 - CSS
 
+## Live Demo
+
+[Live Demo Link](https://selmandapanda.github.io/Selma-Hamutenya-Portfolio/)
+
 ## Get Started
 
 To get a local copy up and running follow these simple example steps.
@@ -15,8 +19,6 @@ To get a local copy up and running follow these simple example steps.
 ## Setup
 
 1. Clone the Repository or Download the Zip file to set up the website locally. (https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) This documentation details the steps to take to clone a repository.
-2. [Live Demo Link](https://selmandapanda.github.io/Selma-Hamutenya-Portfolio/)
-
 
 
 ## Author
@@ -39,9 +41,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Collaborators
+- Mentor
 
 ## 📝 License
 

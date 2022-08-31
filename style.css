@@ -354,6 +354,7 @@ h2.title {
   border-radius: 8px;
   order: 3;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  cursor: pointer;
 }
 
 .action:hover {
@@ -502,7 +503,7 @@ h2.title {
   align-items: flex-start;
   padding: 0;
   gap: 16px;
-  margin-left: -24px;
+  margin-left: 0;
   margin-bottom: 12px;
 }
 
@@ -542,6 +543,7 @@ h2.title {
   border: 1px solid #6070ff;
   color: #fff;
   background-color: #396df2;
+  cursor: pointer;
 }
 
 .about-btn:visited {
@@ -809,6 +811,7 @@ li textarea {
 button:hover {
   background: #8f9afc;
   color: white;
+  cursor: pointer;
 }
 
 button:active {
@@ -980,7 +983,7 @@ button:active {
 
   .snapshotdesktop1 {
     width: 40%;
-    height: 40%;
+    height: auto;
     margin-top: 24px;
     margin-left: 24px;
     border-radius: 8px;
@@ -990,13 +993,13 @@ button:active {
     margin-top: 24px;
     margin-right: -22px;
     width: 40%;
-    height: 40%;
+    height: auto;
     border-radius: 8px;
   }
 
   .snapshotdesktop3 {
     width: 40%;
-    height: 40%;
+    height: auto;
     margin-top: 24px;
     margin-left: 24px;
     border-radius: 8px;
@@ -1006,7 +1009,7 @@ button:active {
     margin-top: 24px;
     margin-right: 22px;
     width: 40%;
-    height: 40%;
+    height: auto;
     border-radius: 8px;
   }
 
@@ -1265,7 +1268,7 @@ button:active {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     width: 100%;
-    margin: 114px 24px auto 0;
+    margin: 114px 24px auto 24px;
   }
 
   h2.about-title {
@@ -1291,12 +1294,14 @@ button:active {
     align-items: center;
     width: 200px;
     height: 40px;
-    margin-top: 20px;
+    margin-top: 12px;
+    margin-left: -36px;
   }
 
   .social-media-connect {
     margin-top: 50px;
     line-height: 24px;
+    margin-left: -12px;
   }
 
   .about-btn {

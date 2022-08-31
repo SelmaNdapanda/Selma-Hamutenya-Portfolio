@@ -503,7 +503,7 @@ h2.title {
   align-items: flex-start;
   padding: 0;
   gap: 16px;
-  margin-left: 0px;
+  margin-left: 0;
   margin-bottom: 12px;
 }
 

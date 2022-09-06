@@ -7,7 +7,7 @@ menu.addEventListener('click', () => {
 
 navigation.addEventListener('click', (event) => {
   const { target } = event;
-  if (target.nodeName === 'NAV' || target.nodeName === 'UL') { navigation.classList.remove('nav-toggle'); }
+  if (target.nodeName === 'NAV' || target.nodeName === 'DIV') { navigation.classList.remove('nav-toggle'); }
 });
 window.addEventListener('scroll', () => {
   menu.classList.remove('fa-times');

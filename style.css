@@ -833,7 +833,7 @@ li textarea {
 }
 
 .shape {
-  position: flex;
+  position: static;
   width: 134px;
   height: 5px;
   margin-bottom: 20px;
@@ -904,7 +904,8 @@ button:active {
     margin-left: 150px;
   }
 
-  #union, .menu {
+  #union,
+  .menu {
     display: none;
   }
 
@@ -922,7 +923,7 @@ button:active {
   .desktop-menu a {
     font-family: "poppins", sans-serif;
     font-style: normal;
-    color: #344563; 
+    color: #344563;
     text-decoration: none;
     font-size: 15px;
     line-height: 20px;

@@ -81,3 +81,99 @@ function cardsBuilder(card, index) {
 cards.forEach((card, index) => {
   cardsBuilder(card, index);
 });
+
+const popupCards = [
+  {
+    title: 'Tonic',
+    datas: ['CANOPY', 'Back End Dev', '2015'],
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ......",
+    skills: ['html', 'css', 'javascript', 'ruby', 'github', 'Bootstraps'],
+    image: 'images/snapshot5.png',
+    liveLink: 'See live',
+    sourceLink: 'See Source',
+  },
+  {
+    title: 'Multi-Post Stories',
+    datas: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .......",
+    skills: ['html', 'css', 'javascript', 'ruby', 'github', 'Bootstraps'],
+    image: 'images/snapshot4.png',
+    liveLink: 'See live',
+    sourceLink: 'See Source',
+  },
+  {
+    title: 'Facebook 360',
+    datas: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .......",
+    skills: ['html', 'css', 'javascript', 'ruby', 'github', 'Bootstraps'],
+    image: 'images/snapshot1.png',
+    liveLink: 'See live',
+    sourceLink: 'See Source',
+  },
+  {
+    title: 'Uber Navigation',
+    datas: ['Uber', 'Lead Developer', '2018'],
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's...........",
+    skills: ['html', 'css', 'javascript', 'ruby', 'github', 'Bootstraps'],
+    image: 'images/snapshot2.png',
+    liveLink: 'See live',
+    sourceLink: 'See Source',
+  },
+];
+const btns = document.querySelectorAll('.btn');
+const bgModal = document.querySelector('.bg-modal');
+function popUp(index) {
+  const {
+    title, datas, description, skills, image,
+  } = popupCards[index];
+  const datasHtml = datas.map(
+    (i) => `<li class = "list-item canopy">${i}</li>${
+      i === datas[datas.length - 1]
+        ? ''
+        : '<li> </li>'
+    }`, ).join('');
+  const skillsHtml = skills.map((s) => `<li class="tag html-tag">${s}</li>`, ).join('');
+  bgModal.innerHTML = `
+  <div class = "modal-content">
+        <div class="modal-header">
+          <h2 class="title">${title}</h3>
+          <span class="close-button">+</span>
+        </div>
+        <ul class = "frame frame-${(index === 0 || index % 2 === 0) ? '1' : '2'}">
+          ${datasHtml}
+        </ul>
+        <img src="${image}" alt="first-project" class="snapshotdesktop1"/>
+        <div class = "btm-content">
+          <div class = "descr-1">
+            <p class="primary-text2">
+            ${description}
+            </p>
+          </div>
+          <div>
+            <ul class="tags">
+              ${skillsHtml}
+            </ul>
+            <div class="buttons">
+              <button type ="button" class="live-btn"> See Live <i class="fas fa-external-link-alt"></i></button>
+              <button type ="button" class="live-btn"> See Source <i class="fab fa-github"></i></button>
+            </div>
+          </div>
+        </div>
+  </div>
+  `;
+  bgModal.style.display = 'flex';
+  bgModal.addEventListener('click', (event) => {
+    const { target: { classList } } = event;
+    if (classList.contains('bg-modal')) {
+      document.querySelector('.bg-modal').style.display = 'none';
+    }
+  });
+  document.querySelector('.close-button').addEventListener('click', () => {
+    document.querySelector('.bg-modal').style.display = 'none';
+  });
+}
+btns.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    popUp(index);
+  });
+});

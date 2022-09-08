@@ -281,7 +281,7 @@ h2.title {
   line-height: 16px;
 }
 
-.canopy {
+.author {
   list-style-type: none;
   font-weight: 500;
   color: #344563;
@@ -493,16 +493,12 @@ h2.title {
   text-decoration: none;
 }
 
-.work-bottom {
-  display: none;
-}
-
 .bg-modal {
   background-color: rgba(193, 199, 208, 0.8);
   width: 100%;
   height: 100%;
   position: fixed;
-  top: 5%;
+  top: 7%;
   display: none;
   justify-content: center;
   align-items: center;
@@ -537,6 +533,7 @@ h2.title {
   display: flex;
   gap: 10px;
   justify-content: center;
+  margin-top: 12px;
 }
 
 .live-btn {
@@ -1179,12 +1176,12 @@ button:active {
   }
 
   .frame-1 {
-    margin-left: 24px;
+    margin-left: 0;
     margin-bottom: 24px;
   }
 
   .frame-2 {
-    margin-left: 24px;
+    margin-left: 0;
     margin-bottom: 24px;
   }
 
@@ -1419,7 +1416,7 @@ button:active {
     background: url("images/abt-myself-desktop.png") no-repeat;
     background-size: cover;
     border-top-right-radius: 70px;
-    top: 2600px;
+    top: 2460px;
     width: 100%;
     height: 924px;
   }
@@ -1579,7 +1576,7 @@ button:active {
   }
 
   .footer {
-    top: 4600px;
+    top: 4300px;
     position: absolute;
     left: 0;
   }

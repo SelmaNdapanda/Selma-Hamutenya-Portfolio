@@ -120,6 +120,7 @@ const popupCards = [
     sourceLink: 'See Source',
   },
 ];
+
 const btns = document.querySelectorAll('.btn');
 const bgModal = document.querySelector('.bg-modal');
 function popUp(index) {

@@ -19,9 +19,9 @@ const cards = [
     image: 'images/snapshot5.png',
     title: 'Tonic',
     datas: {
-      author: 'CANOPY', 
+      author: 'CANOPY',
       role: 'Back End Dev',
-      year: '2015'
+      year: '2015',
     },
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'css', 'javascript'],
@@ -30,9 +30,9 @@ const cards = [
     image: 'images/snapshot4.png',
     title: 'Multi-Post Stories',
     datas: {
-      author:'FACEBOOK', 
-      role: 'Full Stack Dev', 
-      year:'2015'
+      author: 'FACEBOOK',
+      role: 'Full Stack Dev',
+      year: '2015',
     },
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
@@ -41,9 +41,9 @@ const cards = [
     image: 'images/snapshot1.png',
     title: 'Facebook 360',
     datas: {
-      author: 'FACEBOOK', 
+      author: 'FACEBOOK',
       role: 'Full Stack Dev',
-      year: '2015'
+      year: '2015',
     },
     description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
@@ -52,9 +52,9 @@ const cards = [
     image: 'images/snapshot2.png',
     title: 'Uber Navigation',
     datas: {
-      author: 'Uber', 
-      role: 'Lead Developer', 
-      year: '2018'
+      author: 'Uber',
+      role: 'Lead Developer',
+      year: '2018',
     },
     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
@@ -98,9 +98,9 @@ const popupCards = [
   {
     title: 'Tonic',
     datas: {
-      author: 'CANOPY', 
+      author: 'CANOPY',
       role: 'Back End Dev',
-      year: '2015'
+      year: '2015',
     },
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ......",
     skills: ['html', 'css', 'javascript', 'ruby', 'github', 'Bootstraps'],
@@ -111,9 +111,9 @@ const popupCards = [
   {
     title: 'Multi-Post Stories',
     datas: {
-      author:'FACEBOOK', 
-      role: 'Full Stack Dev', 
-      year:'2015'
+      author: 'FACEBOOK',
+      role: 'Full Stack Dev',
+      year: '2015',
     },
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .......",
     skills: ['html', 'css', 'javascript', 'ruby', 'github', 'Bootstraps'],
@@ -122,11 +122,11 @@ const popupCards = [
     sourceLink: 'See Source',
   },
   {
-    title: 'Facebook 360', 
+    title: 'Facebook 360',
     datas: {
-      author: 'FACEBOOK', 
+      author: 'FACEBOOK',
       role: 'Full Stack Dev',
-      year: '2015'
+      year: '2015',
     },
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .......",
     skills: ['html', 'css', 'javascript', 'ruby', 'github', 'Bootstraps'],
@@ -137,9 +137,9 @@ const popupCards = [
   {
     title: 'Uber Navigation',
     datas: {
-      author: 'Uber', 
-      role: 'Lead Developer', 
-      year: '2018'
+      author: 'Uber',
+      role: 'Lead Developer',
+      year: '2018',
     },
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's...........",
     skills: ['html', 'css', 'javascript', 'ruby', 'github', 'Bootstraps'],

@@ -55,7 +55,8 @@ function cardsBuilder(card, index) {
       i === datas[datas.length - 1]
         ? ''
         : '<li> </li>'
-    }`, ).join('');
+    }`,
+  ).join('');
   const skillsHtml = skills.map(
     (s) => `<li class = "tag html-tag">${s}</li>`,
   ).join('');
@@ -132,8 +133,9 @@ function popUp(index) {
       i === datas[datas.length - 1]
         ? ''
         : '<li> </li>'
-    }`, ).join('');
-  const skillsHtml = skills.map((s) => `<li class="tag html-tag">${s}</li>`, ).join('');
+    }`,
+  ).join('');
+  const skillsHtml = skills.map((s) => `<li class="tag html-tag">${s}</li>`).join('');
   bgModal.innerHTML = `
   <div class = "modal-content">
         <div class="modal-header">

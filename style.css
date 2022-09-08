@@ -291,7 +291,8 @@ h2.title {
   margin: 0 0;
 }
 
-.role, .year {
+.role,
+.year {
   list-style-type: disc;
   font-weight: 400;
   color: #7a869a;
@@ -1172,7 +1173,7 @@ button:active {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: 0px;
+    margin-left: 0;
     padding: 0;
     gap: 24px;
   }
@@ -1196,7 +1197,8 @@ button:active {
     margin-left: -24px;
   }
 
-  .frame-2 .role, .year {
+  .frame-2 .role,
+  .year {
     list-style-type: disc;
     color: #6b778c;
   }

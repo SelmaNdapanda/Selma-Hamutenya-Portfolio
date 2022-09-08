@@ -17,6 +17,10 @@ body {
   justify-content: space-between;
   background-color: #fff;
   align-items: center;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 a.logo {
@@ -178,6 +182,7 @@ nav a {
   background: #f7f7f9;
   padding-top: 75px;
   grid-column-gap: 25px;
+  justify-content: center;
 }
 
 .card-works {
@@ -186,13 +191,12 @@ nav a {
   padding: 16px;
   position: static;
   width: 327px;
-  left: calc(50% - 327px / 2);
   top: 114px;
   background: #fff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
-  margin: 25px 24px 88px 0;
+  margin: 25px 24px 88px 24px;
 }
 
 .card-works img {
@@ -213,7 +217,7 @@ nav a {
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 12px 0;
+  margin: 12px 16px;
 }
 
 .snapshotdesktop2 {
@@ -256,7 +260,7 @@ h2.title {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  margin: 12px 16px 12px 16px;
+  margin-left: 16px;
   padding: 0;
   width: 295px;
   height: 80px;
@@ -266,17 +270,20 @@ h2.title {
   display: flex;
   flex-direction: row;
   gap: 25px;
-  margin: 12px 75px 12px 16px;
-  padding: 0;
+  margin-top: -12px;
+  margin-left: 16px;
 }
 
-.canopy {
-  list-style-type: none;
+.list-item {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 500;
   font-size: 13px;
   line-height: 16px;
+}
+
+.author {
+  list-style-type: none;
+  font-weight: 500;
   color: #344563;
   flex: none;
   order: 0;
@@ -284,25 +291,10 @@ h2.title {
   margin: 0 0;
 }
 
-.role {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
-  color: #7a869a;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 0;
-}
-
+.role,
 .year {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
+  list-style-type: disc;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
   color: #7a869a;
   flex: none;
   order: 0;
@@ -501,8 +493,60 @@ h2.title {
   text-decoration: none;
 }
 
-.work-bottom {
+.bg-modal {
+  background-color: rgba(193, 199, 208, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 7%;
   display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 85%;
+  height: auto;
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
+  margin: 0 auto;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  transform: rotate(45deg);
+  cursor: pointer;
+  font-size: 40px;
+  color: grey;
+  margin-top: -36px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.live-btn {
+  background-color: #fff;
+  color: #396df2;
+  padding: 6px 12.8px;
+  font-size: 16px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 50%;
+  height: 48px;
 }
 
 .about {
@@ -662,7 +706,7 @@ h2.title {
   padding-left: 70px;
 }
 
-.frame2 {
+.frame-2 {
   padding-left: 0;
 }
 
@@ -897,6 +941,7 @@ button:active {
     padding-bottom: 2em;
     background-color: #fff;
     justify-content: space-between;
+    box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.1);
   }
 
   a.logo {
@@ -1023,7 +1068,7 @@ button:active {
     height: auto;
   }
 
-  .card-works1 {
+  .card-works-1 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1031,7 +1076,7 @@ button:active {
     gap: 22px;
   }
 
-  .card-works2 {
+  .card-works-2 {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -1071,14 +1116,14 @@ button:active {
     border-radius: 8px;
   }
 
-  .card-works-content1 {
+  .card-works-content-1 {
     margin-top: 24px;
     margin-right: 0;
     width: 50%;
     height: 50%;
   }
 
-  .card-works-content2 {
+  .card-works-content-2 {
     margin-top: 24px;
     margin-left: 0;
     width: 50%;
@@ -1095,6 +1140,7 @@ button:active {
     font-size: 40px;
     line-height: 52px;
     color: #091e42;
+    margin-left: 0;
   }
 
   .tonic {
@@ -1124,57 +1170,34 @@ button:active {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    margin-left: 24px;
+    margin-left: 0;
     padding: 0;
-    gap: 12px;
+    gap: 24px;
   }
 
-  .frame1 {
-    margin-left: 24px;
+  .frame-1 {
+    margin-left: 0;
     margin-bottom: 24px;
   }
 
+  .frame-2 {
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
+
+  .list-item {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   .canopy {
-    list-style-type: none;
-    margin: 0 0;
-    flex: none;
-    flex-grow: 0;
-    order: 0;
-    color: #344563;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
+    margin-left: -24px;
   }
 
-  .role {
-    list-style-type: disc;
-    color: #6b778c;
-    margin: 0 0;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    margin-left: 12px;
-  }
-
+  .frame-2 .role,
   .year {
     list-style-type: disc;
     color: #6b778c;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    margin-left: 12px;
   }
 
   .desc-title {
@@ -1301,6 +1324,87 @@ button:active {
     opacity: 0;
   }
 
+  .bg-modal {
+    background-color: rgba(193, 199, 208, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 8%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    width: 65%;
+    height: 90%;
+    background-color: #fff;
+    border: 1px solid #dfe1e6;
+    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 16px;
+  }
+
+  .modal-content .frame {
+    padding-left: 20px;
+  }
+
+  .modal-content .snapshotdesktop1 {
+    width: 70%;
+    height: 50%;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .btm-content {
+    display: flex;
+    align-items: baseline;
+    margin-top: 2%;
+  }
+
+  .descr-1 {
+    width: 80%;
+  }
+
+  .close-button {
+    transform: rotate(45deg);
+    cursor: pointer;
+    font-size: 40px;
+    color: grey;
+  }
+
+  .bg-modal .primary-text2 {
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 13%;
+  }
+
+  .live-btn {
+    background-color: #fff;
+    color: #396df2;
+    padding: 6px 12.8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    border: 1px solid #6070ff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 48px;
+    width: 50%;
+  }
+
   .about {
     position: relative;
     display: grid;
@@ -1308,13 +1412,13 @@ button:active {
     grid-column-gap: 80px;
     align-items: center;
     box-sizing: border-box;
-    width: 100%;
-    height: 924px;
     margin: 142px 0 10px 0;
     background: url("images/abt-myself-desktop.png") no-repeat;
     background-size: cover;
     border-top-right-radius: 70px;
-    top: 2600px;
+    top: 2460px;
+    width: 100%;
+    height: 924px;
   }
 
   .top {
@@ -1472,7 +1576,7 @@ button:active {
   }
 
   .footer {
-    top: 4600px;
+    top: 4300px;
     position: absolute;
     left: 0;
   }

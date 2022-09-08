@@ -44,3 +44,40 @@ const cards = [
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
   },
 ];
+
+const works = document.querySelector('#Portfolio');
+function cardsBuilder(card, index) {
+  const {
+    image, title, datas, description, skills,
+  } = card;
+  const datasHtml = datas.map(
+    (i) => `<li class = "list-item canopy">${i}</li>${
+      i === datas[datas.length - 1]
+        ? ''
+        : '<li> </li>'
+    }`, ).join('');
+  const skillsHtml = skills.map(
+    (s) => `<li class = "tag html-tag">${s}</li>`,
+  ).join('');
+  works.innerHTML += `
+  <div class = "card-works card-works-${(index === 0 || index % 2 === 0) ? '1' : '2'}">
+    <img src = "${image}" alt="first-project" class="snapshotdesktop1" /></a>
+    <div class="card-works-content-${(index === 0 || index % 2 === 0) ? '1' : '2'}">
+      <h2 class = "title">${title}</h2>
+      <ul class = "frame frame-${(index === 0 || index % 2 === 0) ? '1' : '2'}">
+        ${datasHtml}
+      </ul>
+      <p class = "primary-text2">
+        ${description}
+      </p>
+      <ul class = "tags">
+        ${skillsHtml}
+      </ul>
+      <button class = "btn action"> See Project </button>
+    </div>
+  </div>
+  `;
+}
+cards.forEach((card, index) => {
+  cardsBuilder(card, index);
+});

@@ -18,28 +18,44 @@ const cards = [
   {
     image: 'images/snapshot5.png',
     title: 'Tonic',
-    datas: ['CANOPY', 'Back End Dev', '2015'],
+    datas: {
+      author: 'CANOPY', 
+      role: 'Back End Dev',
+      year: '2015'
+    },
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     skills: ['html', 'css', 'javascript'],
   },
   {
     image: 'images/snapshot4.png',
     title: 'Multi-Post Stories',
-    datas: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    datas: {
+      author:'FACEBOOK', 
+      role: 'Full Stack Dev', 
+      year:'2015'
+    },
     description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
   },
   {
     image: 'images/snapshot1.png',
     title: 'Facebook 360',
-    datas: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    datas: {
+      author: 'FACEBOOK', 
+      role: 'Full Stack Dev',
+      year: '2015'
+    },
     description: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
   },
   {
     image: 'images/snapshot2.png',
     title: 'Uber Navigation',
-    datas: ['Uber', 'Lead Developer', '2018'],
+    datas: {
+      author: 'Uber', 
+      role: 'Lead Developer', 
+      year: '2018'
+    },
     description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     skills: ['html', 'Ruby on rails', 'css', 'javascript'],
   },
@@ -50,13 +66,6 @@ function cardsBuilder(card, index) {
   const {
     image, title, datas, description, skills,
   } = card;
-  const datasHtml = datas.map(
-    (i) => `<li class = "list-item canopy">${i}</li>${
-      i === datas[datas.length - 1]
-        ? ''
-        : '<li> </li>'
-    }`,
-  ).join('');
   const skillsHtml = skills.map(
     (s) => `<li class = "tag html-tag">${s}</li>`,
   ).join('');
@@ -66,7 +75,9 @@ function cardsBuilder(card, index) {
     <div class="card-works-content-${(index === 0 || index % 2 === 0) ? '1' : '2'}">
       <h2 class = "title">${title}</h2>
       <ul class = "frame frame-${(index === 0 || index % 2 === 0) ? '1' : '2'}">
-        ${datasHtml}
+        <li class = "list-item author">${datas.author}</li>
+        <li class = "list-item role">${datas.role}</li>
+        <li class = "list-item year">${datas.year}</li>
       </ul>
       <p class = "primary-text2">
         ${description}
@@ -86,7 +97,11 @@ cards.forEach((card, index) => {
 const popupCards = [
   {
     title: 'Tonic',
-    datas: ['CANOPY', 'Back End Dev', '2015'],
+    datas: {
+      author: 'CANOPY', 
+      role: 'Back End Dev',
+      year: '2015'
+    },
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ......",
     skills: ['html', 'css', 'javascript', 'ruby', 'github', 'Bootstraps'],
     image: 'images/snapshot5.png',
@@ -95,7 +110,11 @@ const popupCards = [
   },
   {
     title: 'Multi-Post Stories',
-    datas: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    datas: {
+      author:'FACEBOOK', 
+      role: 'Full Stack Dev', 
+      year:'2015'
+    },
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .......",
     skills: ['html', 'css', 'javascript', 'ruby', 'github', 'Bootstraps'],
     image: 'images/snapshot4.png',
@@ -103,8 +122,12 @@ const popupCards = [
     sourceLink: 'See Source',
   },
   {
-    title: 'Facebook 360',
-    datas: ['FACEBOOK', 'Full Stack Dev', '2015'],
+    title: 'Facebook 360', 
+    datas: {
+      author: 'FACEBOOK', 
+      role: 'Full Stack Dev',
+      year: '2015'
+    },
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's .......",
     skills: ['html', 'css', 'javascript', 'ruby', 'github', 'Bootstraps'],
     image: 'images/snapshot1.png',
@@ -113,7 +136,11 @@ const popupCards = [
   },
   {
     title: 'Uber Navigation',
-    datas: ['Uber', 'Lead Developer', '2018'],
+    datas: {
+      author: 'Uber', 
+      role: 'Lead Developer', 
+      year: '2018'
+    },
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's...........",
     skills: ['html', 'css', 'javascript', 'ruby', 'github', 'Bootstraps'],
     image: 'images/snapshot2.png',
@@ -128,13 +155,6 @@ function popUp(index) {
   const {
     title, datas, description, skills, image,
   } = popupCards[index];
-  const datasHtml = datas.map(
-    (i) => `<li class = "list-item canopy">${i}</li>${
-      i === datas[datas.length - 1]
-        ? ''
-        : '<li> </li>'
-    }`,
-  ).join('');
   const skillsHtml = skills.map((s) => `<li class="tag html-tag">${s}</li>`).join('');
   bgModal.innerHTML = `
   <div class = "modal-content">
@@ -143,7 +163,9 @@ function popUp(index) {
           <span class="close-button">+</span>
         </div>
         <ul class = "frame frame-${(index === 0 || index % 2 === 0) ? '1' : '2'}">
-          ${datasHtml}
+          <li class = "list-item author">${datas.author}</li>
+          <li class = "list-item role">${datas.role}</li>
+          <li class = "list-item year">${datas.year}</li>
         </ul>
         <img src="${image}" alt="first-project" class="snapshotdesktop1"/>
         <div class = "btm-content">

@@ -220,3 +220,10 @@ form.addEventListener('submit', (e) => {
     form.submit();
   }
 });
+
+const userData = {
+  name: "",
+  email: "",
+  message:""
+}
+

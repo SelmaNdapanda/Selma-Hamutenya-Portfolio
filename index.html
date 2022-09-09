@@ -134,13 +134,14 @@
       <h2 class="contact-title">Contact me</h2>
       <p class="contact-description">If you have an application you are interested in developing, a feature that you need
           built or a project that needs coding. I'd love to help with it </p>
-    <form action="https://formspree.io/f/xwkydypy" id="form" class="form" method="post">
+    <form action="https://formspree.io/f/xwkydypy" id="form" class="contact-form" method="post" novalidate>
       <ul class="inner-list">
         <li><input type="text" class="form-control" placeholder="Full name" name="name" id="name" size="40" maxlength="30" required>
         </li>
         <li><input type="email" class="form-control" name="email" id="email" placeholder="Email address" required>
         </li>
         <li><textarea name="text" class="form-control" id="text" placeholder="Message" maxlength="500" required></textarea></li>
+        <li><span class="error" aria-live="polite"></span></li>
         <li class="flex-item6" id="submit-btn"><button type="submit">Get In Touch</button></li>
       </ul>
     </form>

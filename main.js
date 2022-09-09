@@ -221,34 +221,23 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-function storeData() {
+const contactForm = document.querySelector('#form');
 const userData = {
-  name: "",
-  email: "",
-  message:""
-}
+  name: '',
+  email: '',
+  message: '',
+};
 
-const userName = document.getElementById('name');
-const userEmail = document.getElementById('email');
-const userMessage = document.getElementById('text');
+contactForm.addEventListener('change', () => {
+  userData.name = document.querySelector('#name').value;
+  userData.email = document.querySelector('#email').value;
+  userData.message = document.querySelector('#text').value;
 
-userName.addEventListener('input', letter => {
-  userData.name.textContent = letter.target.value;
-})
-
-userEmail.addEventListener('input', letter => {
-  userData.email.textContent = letter.target.value;
-})
-
-userMessage.addEventListener('input', letter => {
-  userData.message.textContent = letter.target.value;
-})
-
-const saveToLocalStorage = () => {
-  localStorage.setItem('name', userData.name)
-  localStorage.setItem('email', userData.email)
-  localStorage.setItem('message', userData.message)
-}
-
-butt.addEventListener('click', saveToLocalStorage);
+  localStorage.setItem('content', JSON.stringify(userData));
+});
+const dataOBJ = JSON.parse(localStorage.getItem('content'));
+if (dataOBJ) {
+  document.querySelector('#name').value = dataOBJ.name;
+  document.querySelector('#email').value = dataOBJ.email;
+  document.querySelector('#text').value = dataOBJ.message;
 }

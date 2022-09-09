@@ -221,9 +221,34 @@ form.addEventListener('submit', (e) => {
   }
 });
 
+function storeData() {
 const userData = {
   name: "",
   email: "",
   message:""
 }
 
+const userName = document.getElementById('name');
+const userEmail = document.getElementById('email');
+const userMessage = document.getElementById('text');
+
+userName.addEventListener('input', letter => {
+  userData.name.textContent = letter.target.value;
+})
+
+userEmail.addEventListener('input', letter => {
+  userData.email.textContent = letter.target.value;
+})
+
+userMessage.addEventListener('input', letter => {
+  userData.message.textContent = letter.target.value;
+})
+
+const saveToLocalStorage = () => {
+  localStorage.setItem('name', userData.name)
+  localStorage.setItem('email', userData.email)
+  localStorage.setItem('message', userData.message)
+}
+
+butt.addEventListener('click', saveToLocalStorage);
+}

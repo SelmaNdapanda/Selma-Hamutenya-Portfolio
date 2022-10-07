@@ -537,9 +537,10 @@ h2.title {
 }
 
 .live-btn {
+  font-family: 'Poppins', sans-serif;
   background-color: #fff;
   color: #396df2;
-  padding: 6px 12.8px;
+  padding: 10px 20px;
   font-size: 16px;
   border: 1px solid #6070ff;
   box-sizing: border-box;
@@ -547,6 +548,15 @@ h2.title {
   cursor: pointer;
   width: 50%;
   height: 48px;
+  text-decoration: none;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.live-btn:hover {
+  background-color: #396df2;
+  color: #ffff;
+  border: 1px solid #6070ff;
 }
 
 .about {
@@ -1384,7 +1394,7 @@ button:active {
   }
 
   .descr-1 {
-    width: 80%;
+    width: 70%;
   }
 
   .close-button {
@@ -1408,15 +1418,16 @@ button:active {
   .live-btn {
     background-color: #fff;
     color: #396df2;
-    padding: 6px 12.8px;
+    padding: 10px 4px;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     border: 1px solid #6070ff;
     box-sizing: border-box;
     border-radius: 8px;
     cursor: pointer;
-    height: 48px;
+    height: 50px;
     width: 50%;
+    margin-top: 0.5%;
   }
 
   .about {

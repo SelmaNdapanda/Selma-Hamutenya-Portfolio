@@ -16,15 +16,15 @@ window.addEventListener('scroll', () => {
 
 const cards = [
   {
-    image: 'images/snapshot5.png',
-    title: 'Tonic',
+    image: 'images/capstone_desktop.PNG',
+    title: 'Workshop',
     datas: {
-      author: 'CANOPY',
-      role: 'Back End Dev',
-      year: '2015',
+      author: 'SELMA',
+      role: 'Full Stack Dev',
+      year: '2022',
     },
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    skills: ['html', 'css', 'javascript'],
+    description: 'This is my first capstone project for module 1 of HTML/CSS, It is a workshop website buiLt for PyLadies Namibia',
+    skills: ['html', 'css', 'javascript', 'GitHub'],
   },
   {
     image: 'images/snapshot4.png',
@@ -96,17 +96,17 @@ cards.forEach((card, index) => {
 
 const popupCards = [
   {
-    title: 'Tonic',
+    title: 'Workshop',
     datas: {
-      author: 'CANOPY',
-      role: 'Back End Dev',
-      year: '2015',
+      author: 'SELMA',
+      role: 'Full Stack Dev',
+      year: '2022',
     },
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's ......",
-    skills: ['html', 'css', 'javascript', 'ruby', 'github', 'Bootstraps'],
-    image: 'images/snapshot5.png',
-    liveLink: 'See live',
-    sourceLink: 'See Source',
+    description: 'This is my first capstone project for module 1 of HTML/CSS, It is a workshop website built for PyLadies Namibia',
+    skills: ['html', 'css', 'javascript', 'github'],
+    image: 'images/capstone_desktop.PNG',
+    liveLink: 'https://selmandapanda.github.io/Capstone-Project-1/',
+    sourceLink: 'https://github.com/SelmaNdapanda/Capstone-Project-1',
   },
   {
     title: 'Multi-Post Stories',
@@ -179,8 +179,8 @@ function popUp(index) {
               ${skillsHtml}
             </ul>
             <div class="buttons">
-              <button type ="button" class="live-btn"> See Live <i class="fas fa-external-link-alt"></i></button>
-              <button type ="button" class="live-btn"> See Source <i class="fab fa-github"></i></button>
+              <a href="https://selmandapanda.github.io/Capstone-Project-1/" type ="button" class="live-btn"> See Live <i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/SelmaNdapanda/Capstone-Project-1" type ="button" class="live-btn"> See Source <i class="fab fa-github"></i></a>
             </div>
           </div>
         </div>
